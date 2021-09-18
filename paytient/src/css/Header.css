@@ -1,0 +1,24 @@
+.Header {
+    background-color: #FFFFFF;
+    box-shadow: 20px 25px 40px 0 rgba(35, 38, 90, 0.06);
+  }
+
+  .Logo{
+    width: 125px;
+    height: 51px;
+  }
+
+  #user_icon{
+    margin-top: 12px;
+    color: #5A5773;
+    margin-left: 20px;
+  }
+
+  .Header #menu_icon{
+    margin-left: 20px;
+    color: #5A5773;
+  }
+  .Header #icon{
+    color: #5A5773;
+    margin-left: 20px;
+  }

@@ -1,0 +1,113 @@
+.Dashboard{
+    text-align: center;
+}
+
+.Header{
+    margin-top: 30px;
+}
+
+.Header #title{
+    font-family: InterUI;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+    text-align: left;
+}
+
+.Header #period{
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: -0.02px;
+    line-height: 24px;
+    opacity: 0.5047723679315477;
+    text-align: right;
+}
+
+
+.Card{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 20px 25px 40px 0 rgba(35, 38, 90, 0.06);
+  width: 260px;
+  height: 197px;
+  margin-top: 30px;
+}
+
+.Card #header_card{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.Card #title_card{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #5A5773;
+    font-family: InterUI;
+    font-size: 16px;
+    letter-spacing: -0.09px;
+    line-height: 24px;
+    opacity: 0.6146952311197916;
+    width: 204px;
+}
+
+.Card #content_card{
+    margin: 50px;
+    color: #5A5773;
+    font-family: InterUI;
+    font-size: 39px;
+    letter-spacing: -1.46px;
+    line-height: 26px;
+    text-align: center
+}
+
+.Card #footer_card{
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.Card #text_card{
+    color: #5A5773;
+    font-family: InterUI;
+    font-size: 18px;
+    letter-spacing: -0.67px;
+    line-height: 26px;
+    opacity: 0.5387028285435268;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.Card #cart_icon{
+    color: #1094FF;
+    margin-top:20px;
+    margin-left: 20px;
+}
+.Card #sales_icon{
+    color: #00D954;
+    margin-top:20px;
+    margin-left: 20px;
+}
+.Card #exchange_icon{
+    color: #FFD610;
+    margin-top:20px;
+    margin-left: 20px;
+}
+.Card #user_icon{
+    color: #9000D9;
+    margin-top:20px;
+    margin-left: 20px;
+}
+.Card #up_icon{
+    color: #00D954;
+    margin-top: 8px;
+    align-self: center;
+}
+
+.Card #down_icon{
+    color: #D90000;
+    align-self: center;
+    margin-bottom: 8px;
+}
