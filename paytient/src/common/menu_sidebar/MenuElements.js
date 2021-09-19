@@ -1,9 +1,10 @@
 import '../../css/Menu.css';
 //Icones de FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartBar, faBullseye, faUser} from "@fortawesome/free-solid-svg-icons";
+import { faChartBar, faBullseye, faShoppingCart, faReceipt, faCog} from "@fortawesome/free-solid-svg-icons";
+import {  faUser} from "@fortawesome/free-regular-svg-icons";
+
 //Iconed de Material UI
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 export const MenuElements = [
     {
@@ -26,7 +27,7 @@ export const MenuElements = [
     },
     {
         title: "Vendas",
-        icon: <svg data-testid={ShoppingCartOutlinedIcon }></svg>,
+        icon: <FontAwesomeIcon  icon={faShoppingCart}/>,
         link: "/vendas",
 
     },
@@ -38,13 +39,13 @@ export const MenuElements = [
     },
     {
         title: "Cobranças",
-        icon: <i class="far fa-chart-bar"></i>,
+        icon: <FontAwesomeIcon  icon={faReceipt} />,
         link: "/cobranças",
 
     },
     {
         title: "Configurações",
-        icon: <i class="far fa-chart-bar"></i>,
+        icon: <FontAwesomeIcon  icon={faCog} />,
         link: "/configurações",
 
     },

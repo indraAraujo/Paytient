@@ -7,6 +7,12 @@
   .Logo{
     width: 125px;
     height: 51px;
+    margin-left: 10px;
+  }
+
+  .Header #container_navbar{
+    margin: 0;
+    padding: 0;
   }
 
   #user_icon{
@@ -15,8 +21,19 @@
     margin-left: 20px;
   }
 
-  .Header #menu_icon{
+  #profile_photo{
+    background-image: url(https://marvel-live.freetls.fastly.net/canvas/2021/6/d1895427eb6143a69cb1582caed953ea?quality=95&fake=.png);
+    background-size: 100%;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
     margin-left: 20px;
+    margin-top: 5px;
+
+  }
+
+  .Header #menu_icon{
+    margin-left: 90px;
     color: #5A5773;
   }
   .Header #icon{

@@ -11,11 +11,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign, faExchangeAlt, faShoppingCart, faSortUp, faSortDown} from "@fortawesome/free-solid-svg-icons";
 import { faUser} from "@fortawesome/free-regular-svg-icons";
 
+//Imagem do gráfico de faturamento vc custo fixo
+import graph from '../assets/graph.png';
+
 
 export default function Dashboard(){
     return(
         <div className="Dashboard">
-           
             <Container id="container">
                 <Row id="row">
                     <Col md id="col">
@@ -70,10 +72,16 @@ export default function Dashboard(){
                         </div>    
                     </Col>
                 </Row>
+                <div className="Graph">
+                    <div id="graph_header">
+                        <FontAwesomeIcon  icon={faDollarSign} id="sales_icon"/>
+                        <div id="graph_title"> Faturamento vs Custo Fixo</div>
+                    </div>
+                    <img src={graph} alt="Graph" id="graph_picture"/>
+
+                </div>
             </Container>
-            <div id="graph">
-                
-            </div>
+            
         </div>
     )
 }

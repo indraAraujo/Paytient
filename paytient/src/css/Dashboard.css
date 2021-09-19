@@ -24,17 +24,24 @@
 }
 
 .Dashboard #container{
-    margin: 0;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0;
 }
 
 .Dashboard #row{
     margin: 0;
     padding: 0;
+    height: auto;
+    width: auto;
 }
 .Dashboard #col{
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
+    width: auto;
+    border: 0;
 }
 .Card{
   background-color: #FFFFFF;
@@ -42,7 +49,7 @@
   box-shadow: 20px 25px 40px 0 rgba(35, 38, 90, 0.06);
   width: 250px;
   height: 197px;
-  margin-top: 30px;
+  margin:0;
 }
 
 .Card #header_card{
@@ -94,22 +101,22 @@
 
 .Card #cart_icon{
     color: #1094FF;
-    margin-top:20px;
+    margin-top:23px;
     margin-left: 20px;
 }
 .Card #sales_icon{
     color: #00D954;
-    margin-top:20px;
+    margin-top:23px;
     margin-left: 20px;
 }
 .Card #exchange_icon{
     color: #FFD610;
-    margin-top:20px;
+    margin-top:23px;
     margin-left: 20px;
 }
 .Card #user_icon{
     color: #9000D9;
-    margin-top:20px;
+    margin-top:23px;
     margin-left: 20px;
 }
 .Card #up_icon{
@@ -124,3 +131,35 @@
     margin-bottom: 8px;
 }
 
+.Graph{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 20px 25px 40px 0 rgba(35, 38, 90, 0.06);
+    width: 1090px;
+    height: 404px;
+    margin-top: 30px;
+}
+
+.Graph #graph_header{
+    display: flex;
+    flex-direction: row;
+}
+
+.Graph #sales_icon{
+    color: #00D954;
+    margin-top:23px;
+    margin-left: 20px;
+}
+
+.Graph #graph_title{
+    color: #5A5773;
+    font-family: InterUI;
+    font-size: 16px;
+    letter-spacing: -0.09px;
+    line-height: 24px;
+    opacity: 0.6146952311197916;
+    width: 204px;
+    text-align: left;
+    margin-top:20px;
+    margin-left: 10px;
+}

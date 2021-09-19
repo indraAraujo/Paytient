@@ -13,8 +13,6 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-//Opções de menu
-import {MenuElements} from './menu_sidebar/MenuElements';
 
 //Imagem do logo
 import logo from '../assets/logo.png';
@@ -30,30 +28,31 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
         onClick(e);
       }}
     >
-      {<FontAwesomeIcon  icon={faUserCircle} id="user_icon"/>}
+      {<div id="profile_photo"></div>}
       {children}
     </a>
   ));
 
-
 export default function Header(){
     const [sidebar, setSidebar] = useState(false);
 
-    const showSidebar = () => setSidebar(!sidebar);
+    const showSidebar = () => {
+        setSidebar(!sidebar);
+    }
 
     return(
     <>
         <div className="Header"> 
             <Navbar collapseOnSelect expand="lg" >
-                <Container>
+                <Container id="container_navbar">
                 <img src={logo} alt="Logo" className="Logo"/>
                 <FontAwesomeIcon  icon={faBars} id="menu_icon" onClick={showSidebar}/> 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse>
                     <Nav className="me-auto"></Nav>
-                    <Nav>
-                        <Nav.Link href="#deets"> <FontAwesomeIcon  icon={faComment} id="icon"/></Nav.Link>
-                        <Nav.Link href="#deets"> <FontAwesomeIcon  icon={faBell} id="icon"/></Nav.Link>
+                    <Nav >
+                        <Nav.Link href="#comment"> <FontAwesomeIcon  icon={faComment} id="icon"/></Nav.Link>
+                        <Nav.Link href="#notifications"> <FontAwesomeIcon  icon={faBell} id="icon"/></Nav.Link>
                         <Dropdown>
                             <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components"></Dropdown.Toggle>
                             <Dropdown.Menu>

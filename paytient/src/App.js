@@ -23,7 +23,7 @@ export default function App() {
           <Col md="auto" id="col_menu">
             <Menu/>
           </Col>
-          <Col xs={12} md={8} id="col_pages">
+          <Col xs={10} md={9} id="col_pages">
             <Switch>
               <Route exact path="/"  component={Dashboard}/>
             </Switch>
