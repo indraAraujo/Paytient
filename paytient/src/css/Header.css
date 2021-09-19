@@ -15,12 +15,6 @@
     padding: 0;
   }
 
-  #user_icon{
-    margin-top: 12px;
-    color: #5A5773;
-    margin-left: 20px;
-  }
-
   #profile_photo{
     background-image: url(https://marvel-live.freetls.fastly.net/canvas/2021/6/d1895427eb6143a69cb1582caed953ea?quality=95&fake=.png);
     background-size: 100%;

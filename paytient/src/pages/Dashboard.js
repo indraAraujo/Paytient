@@ -6,18 +6,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+
 //Icones do FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign, faExchangeAlt, faShoppingCart, faSortUp, faSortDown} from "@fortawesome/free-solid-svg-icons";
 import { faUser} from "@fortawesome/free-regular-svg-icons";
 
-//Imagem do gráfico de faturamento vc custo fixo
-import graph from '../assets/graph.png';
-
-
 export default function Dashboard(){
     return(
         <div className="Dashboard">
+            <Container id="header_dashboard">
+                    <div id="title_header">Indicadores</div>
+                    <div id="time_header">Período: Últimos 12 meses</div>
+            </Container>
             <Container id="container">
                 <Row id="row">
                     <Col md id="col">
@@ -39,7 +40,10 @@ export default function Dashboard(){
                                 <FontAwesomeIcon  icon={faDollarSign} id="sales_icon"/>
                                 <div id="title_card"> Faturamento</div>
                             </div>
-                            <div id="content_card"> 12.167.943</div>
+                            <div id="faturamento_adjustment">
+                                <h id="faturamento_money">R$</h>
+                                <div id="faturamento_price">12.167.943</div>
+                            </div>
                             <div id="footer_card"> 
                                 <FontAwesomeIcon  icon={faSortUp} id="up_icon"/>
                                 <div id="text_card">4,67%</div>
@@ -77,22 +81,10 @@ export default function Dashboard(){
                         <FontAwesomeIcon  icon={faDollarSign} id="sales_icon"/>
                         <div id="graph_title"> Faturamento vs Custo Fixo</div>
                     </div>
-                    <img src={graph} alt="Graph" id="graph_picture"/>
-
+                    
                 </div>
             </Container>
             
         </div>
     )
 }
-
-/*
- <div className="Header">
-                <Container>
-                    <Row>
-                        <Col sm={8} id="title">Indicadores</Col>
-                        <Col sm={4} id="period">Período: Último 12 meses</Col>
-                    </Row>
-                </Container>
-            </div>
-*/

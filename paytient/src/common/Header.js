@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../css/Header.css';
 
 //Icones de FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment, faBell} from "@fortawesome/free-regular-svg-icons";
-import { faBars, faUserCircle} from "@fortawesome/free-solid-svg-icons";
+import { faBars} from "@fortawesome/free-solid-svg-icons";
 
 
 //Componentes do BootStrap
@@ -16,7 +16,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 //Imagem do logo
 import logo from '../assets/logo.png';
-
 
 //Função para customizar o botão do menu estilo dropdown
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
@@ -33,20 +32,17 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     </a>
   ));
 
-export default function Header(){
-    const [sidebar, setSidebar] = useState(false);
-
-    const showSidebar = () => {
-        setSidebar(!sidebar);
+export default function Header(props){
+    const showMenu=()=>{
+        props.setMenu(!props.menu);
     }
-
     return(
     <>
         <div className="Header"> 
             <Navbar collapseOnSelect expand="lg" >
                 <Container id="container_navbar">
                 <img src={logo} alt="Logo" className="Logo"/>
-                <FontAwesomeIcon  icon={faBars} id="menu_icon" onClick={showSidebar}/> 
+                <FontAwesomeIcon  icon={faBars} id="menu_icon" onClick={showMenu}/> 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav className="me-auto"></Nav>

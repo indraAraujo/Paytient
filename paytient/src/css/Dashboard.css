@@ -2,25 +2,31 @@
     text-align: center;
 }
 
-.Header{
-    margin-top: 30px;
+.Dashboard #header_dashboard{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
 }
 
-.Header #title{
+.Dashboard #title_header{
+    flex:70%;
+    color: #5A5773;
     font-family: InterUI;
     font-size: 24px;
     letter-spacing: -0.4px;
     line-height: 26px;
     text-align: left;
+
 }
 
-.Header #period{
+.Dashboard #time_header{
+    flex:30%;
     font-family: Roboto;
     font-size: 12px;
     letter-spacing: -0.02px;
     line-height: 24px;
     opacity: 0.5047723679315477;
-    text-align: right;
 }
 
 .Dashboard #container{
@@ -42,6 +48,7 @@
     padding: 0;
     width: auto;
     border: 0;
+    margin-top: 10px;
 }
 .Card{
   background-color: #FFFFFF;
@@ -72,6 +79,36 @@
 
 .Card #content_card{
     margin: 50px;
+    color: #5A5773;
+    font-family: InterUI;
+    font-size: 39px;
+    letter-spacing: -1.46px;
+    line-height: 26px;
+    text-align: center
+}
+
+.Card #faturamento_adjustment{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.Card #faturamento_money{
+    color: #5A5773;
+    font-family: InterUI;
+    font-size: 19px;
+    letter-spacing: -0.11px;
+    line-height: 24px;
+    opacity: 0.6146952311197916;
+    width: 27px;
+    text-align: left;
+    margin-top: 55px;
+    margin-left: 25px;
+}
+
+.Card #faturamento_price{
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: #5A5773;
     font-family: InterUI;
     font-size: 39px;

@@ -1,9 +1,6 @@
-import React, {useState} from 'react';
 import '../../css/Menu.css';
 
 import {MenuElements} from './MenuElements';
-
-const sidebar=true;
 
 const render_elements =() =>{
     return(
@@ -20,10 +17,10 @@ const render_elements =() =>{
     )
 }
 
-export default function Menu(){
+export default function Menu(props){
     return(
-        <div className={sidebar ? 'Menu' : 'Menu_inactive'}>
-            {sidebar ? render_elements() : null }
+        <div className={props.menu ? 'Menu' : 'Menu_inactive'}>
+            {props.menu ? render_elements() : null }
            
         </div>
     )

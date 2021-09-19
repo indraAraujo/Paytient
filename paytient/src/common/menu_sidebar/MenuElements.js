@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartBar, faBullseye, faShoppingCart, faReceipt, faCog} from "@fortawesome/free-solid-svg-icons";
 import {  faUser} from "@fortawesome/free-regular-svg-icons";
 
-//Iconed de Material UI
+//Icone de pá
+import shovel from '../../assets/shovel_icon.png';
 
 export const MenuElements = [
     {
@@ -15,7 +16,7 @@ export const MenuElements = [
     },
     {
         title: "Leads",
-        icon: <i class="far fa-chart-bar"></i>, 
+        icon: <img src={shovel} alt="Shovel"/>,
         link: "/leads",
 
     },
