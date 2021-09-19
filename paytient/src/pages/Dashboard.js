@@ -15,17 +15,10 @@ import { faUser} from "@fortawesome/free-regular-svg-icons";
 export default function Dashboard(){
     return(
         <div className="Dashboard">
-            <div className="Header">
-                <Container>
-                    <Row>
-                        <Col sm={8} id="title">Indicadores</Col>
-                        <Col sm={4} id="period">Período: Último 12 meses</Col>
-                    </Row>
-                </Container>
-            </div>
-            <Container>
-                <Row>
-                    <Col md>
+           
+            <Container id="container">
+                <Row id="row">
+                    <Col md id="col">
                         <div className="Card">
                             <div id="header_card">
                                 <FontAwesomeIcon  icon={faShoppingCart} id="cart_icon"/>
@@ -38,7 +31,7 @@ export default function Dashboard(){
                             </div>
                         </div>    
                     </Col>
-                    <Col  md>
+                    <Col  md id="col">
                         <div className="Card">
                             <div id="header_card">
                                 <FontAwesomeIcon  icon={faDollarSign} id="sales_icon"/>
@@ -51,7 +44,7 @@ export default function Dashboard(){
                             </div>
                         </div>    
                     </Col>
-                    <Col md>
+                    <Col md id="col">
                         <div className="Card">
                             <div id="header_card">
                                 <FontAwesomeIcon  icon={faExchangeAlt} id="exchange_icon"/>
@@ -64,7 +57,7 @@ export default function Dashboard(){
                             </div>
                         </div>    
                     </Col>
-                    <Col md>
+                    <Col md id="col">
                         <div className="Card">
                             <div id="header_card">
                                 <FontAwesomeIcon  icon={faUser} id="user_icon"/>
@@ -84,3 +77,14 @@ export default function Dashboard(){
         </div>
     )
 }
+
+/*
+ <div className="Header">
+                <Container>
+                    <Row>
+                        <Col sm={8} id="title">Indicadores</Col>
+                        <Col sm={4} id="period">Período: Último 12 meses</Col>
+                    </Row>
+                </Container>
+            </div>
+*/

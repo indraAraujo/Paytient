@@ -23,12 +23,24 @@
     text-align: right;
 }
 
+.Dashboard #container{
+    margin: 0;
+    padding: 0;
+}
 
+.Dashboard #row{
+    margin: 0;
+    padding: 0;
+}
+.Dashboard #col{
+    margin: 0;
+    padding: 0;
+}
 .Card{
   background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 20px 25px 40px 0 rgba(35, 38, 90, 0.06);
-  width: 260px;
+  width: 250px;
   height: 197px;
   margin-top: 30px;
 }
@@ -111,3 +123,4 @@
     align-self: center;
     margin-bottom: 8px;
 }
+
