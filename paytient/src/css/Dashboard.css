@@ -90,7 +90,8 @@
     font-size: 39px;
     letter-spacing: -1.46px;
     line-height: 26px;
-    text-align: center
+    text-align: center;
+    font-weight: bold;
 }
 
 .Card #faturamento_adjustment{
@@ -120,7 +121,8 @@
     font-size: 39px;
     letter-spacing: -1.46px;
     line-height: 26px;
-    text-align: center
+    text-align: center;
+    font-weight: bold;
 }
 
 .Card #footer_card{
