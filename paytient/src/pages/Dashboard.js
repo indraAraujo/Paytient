@@ -17,6 +17,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign, faExchangeAlt, faShoppingCart, faSortUp, faSortDown} from "@fortawesome/free-solid-svg-icons";
 import { faUser} from "@fortawesome/free-regular-svg-icons";
 
+//Icone do Ant Design
+import {AiOutlineShoppingCart} from 'react-icons/ai';
+
 export default function Dashboard(){
     return(
         <div className="Dashboard">
@@ -31,7 +34,7 @@ export default function Dashboard(){
                     <Col md id="col">
                         <div className="Card">
                             <div id="header_card">
-                                <FontAwesomeIcon  icon={faShoppingCart} id="cart_icon"/>
+                                <AiOutlineShoppingCart id="cart_icon"/>
                                 <div id="title_card">Vendas </div>
                             </div>
                             <div id="content_card"> 245</div>

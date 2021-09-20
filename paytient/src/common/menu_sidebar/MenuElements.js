@@ -7,14 +7,14 @@ import '../../css/Menu.css';
 
 //Icones de FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartBar, faBullseye, faShoppingCart, faReceipt, faCog} from "@fortawesome/free-solid-svg-icons";
+import { faChartBar, faBullseye, faReceipt} from "@fortawesome/free-solid-svg-icons";
 import {  faUser} from "@fortawesome/free-regular-svg-icons";
 
 //Icone de Ant Design 
-//import {AiOutlineShoppingCart} from 'react-icon/ai';
+import {AiOutlineShoppingCart} from 'react-icons/ai';
 
 //Icone de BoxIcons
-//import {BiCog} from 'react-icon/bi;
+import {BiCog} from 'react-icons/bi';
 
 //Icone de pá
 import shovel from '../../assets/shovel_icon.png';
@@ -41,7 +41,7 @@ export const MenuElements = [
     },
     {
         title: "Vendas",
-        icon: <FontAwesomeIcon  icon={faShoppingCart}/>,
+        icon: <AiOutlineShoppingCart/>,
         link: "/vendas",
 
     },
@@ -59,7 +59,7 @@ export const MenuElements = [
     },
     {
         title: "Configurações",
-        icon: <FontAwesomeIcon  icon={faCog} />,
+        icon: <BiCog />,
         link: "/configurações",
 
     },
