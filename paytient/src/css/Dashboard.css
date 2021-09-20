@@ -1,9 +1,13 @@
+/*
+* CSS para estilizar a página Dashboard 
+*/
 .Dashboard{
     text-align: center;
     margin:0;
     padding: 0;
 }
 
+/*Estilizações para o título do dashboard*/
 .Dashboard #header_dashboard{
     margin-top: 50px;
     display: flex;
@@ -37,6 +41,7 @@
     padding: 0;
 }
 
+/*Estilizações para os cards do dashboard*/
 .Dashboard #row{
     margin: 0;
     padding: 0;
@@ -51,6 +56,7 @@
     border: 0;
     margin-top: 10px;
 }
+
 .Card{
   background-color: #FFFFFF;
   border-radius: 15px;
@@ -136,6 +142,8 @@
     margin-left: 10px;
 }
 
+/*Estilizações para os ícones dos Cards*/
+
 .Card #cart_icon{
     color: #1094FF;
     margin-top:23px;
@@ -168,6 +176,7 @@
     margin-bottom: 8px;
 }
 
+/*Estilizações para o gráfico do dashboard*/
 
 .Graph{
     background-color: #FFFFFF;
@@ -205,6 +214,8 @@
 .Graph #graph_picture{
     height: 250px;
 }
+
+/*Responsividade da div do gráfico e sua respectiva imagem*/
 
 @media screen and (max-width: 400px){
     .Graph{

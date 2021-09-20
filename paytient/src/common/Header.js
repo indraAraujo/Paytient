@@ -1,3 +1,7 @@
+/*
+* Componente do header da site
+*/
+
 import React from 'react';
 import '../css/Header.css';
 
@@ -17,7 +21,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 //Imagem do logo
 import logo from '../assets/logo.png';
 
-//Função para customizar o botão do menu estilo dropdown
+//Função para customizar o botão do menu estilo dropdown para a foto de perfil do usuário
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <a
       href=""
@@ -32,7 +36,9 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     </a>
   ));
 
+//Componente define o estado do menu através do props.setMenu de acordo com o estado que recebe
 export default function Header(props){
+    //Função para trocar o estado do menu (abrir ou fechar o menu de acordo com o clique no icone "Bars")
     const showMenu=()=>{
         props.setMenu(!props.menu);
     }
@@ -41,14 +47,17 @@ export default function Header(props){
         <div className="Header"> 
             <Navbar collapseOnSelect expand="lg" >
                 <Container id="container_navbar">
+                {/*Lado direito do header */}
                 <img src={logo} alt="Logo" className="Logo"/>
                 <FontAwesomeIcon  icon={faBars} id="menu_icon" onClick={showMenu}/> 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav className="me-auto"></Nav>
                     <Nav >
+                        {/*Lado esquerdo do header */}
                         <Nav.Link href="#comment"> <FontAwesomeIcon  icon={faComment} id="icon"/></Nav.Link>
                         <Nav.Link href="#notifications"> <FontAwesomeIcon  icon={faBell} id="icon"/></Nav.Link>
+                        {/*Menu dropdown do ícone de perfil */}
                         <Dropdown>
                             <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components"></Dropdown.Toggle>
                             <Dropdown.Menu>

@@ -1,3 +1,8 @@
+/*
+* CSS para estilizar o menu vertical
+*/
+
+/*Estilo quando o menu estiver aberto */
 .Menu{
     background-color: white;
     width: 200px;
@@ -6,6 +11,7 @@
     box-shadow: 20px -1 40px 0 rgba(35, 38, 90, 0.06);
 }
 
+/*Estilo para esconder o menu */
 .Menu_inactive{
     left: -100px;
 }
@@ -22,22 +28,18 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-
-    color: #5A5773;
     font-family: InterUI;
     font-size: 14px;
     letter-spacing: -0.4px;
     text-align: left;
 }
-.row #icon_active{
-    flex: 30%;
-    display: grid;
-    place-items: center;
-    margin-bottom: 10px;
-    color:#00D954;
-}
+
+/*Estilizações do item da página atual (item ativo)*/
+
 .row #title_inactive{
     flex: 70%;
+    color: #5A5773;
+    font-weight: lighter;
     
 }
 
@@ -46,6 +48,16 @@
     display: grid;
     place-items: center;
     margin-bottom: 10px;
+}
+
+/*Estilizações dos outros itens  (itens inativos)*/
+
+.row #icon_active{
+    flex: 30%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 10px;
+    color:#00D954;
 }
 .row #title_active{
     flex: 70%;

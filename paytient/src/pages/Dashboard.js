@@ -1,3 +1,6 @@
+/*
+* Componente para a página Dashboard
+*/
 import '../css/Dashboard.css';
 
 //Componentes do Bootstrap
@@ -17,10 +20,12 @@ import { faUser} from "@fortawesome/free-regular-svg-icons";
 export default function Dashboard(){
     return(
         <div className="Dashboard">
+            {/*Texto titulo da página */}
             <Container id="header_dashboard">
                     <div id="title_header">Indicadores</div>
                     <div id="time_header">Período: Últimos 12 meses</div>
             </Container>
+            {/*Cards com os valores */}
             <Container id="container">
                 <Row id="row">
                     <Col md id="col">
@@ -78,6 +83,7 @@ export default function Dashboard(){
                         </div>    
                     </Col>
                 </Row>
+                {/*Gráfico (simulação através de uma imagem) */}
                 <div className="Graph">
                     <div id="graph_header">
                         <FontAwesomeIcon  icon={faDollarSign} id="sales_icon"/>
