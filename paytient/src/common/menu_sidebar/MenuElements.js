@@ -10,7 +10,7 @@ import shovel from '../../assets/shovel_icon.png';
 export const MenuElements = [
     {
         title: "Dashboard",
-        icon: <FontAwesomeIcon  icon={faChartBar} id="active"/>,
+        icon: <FontAwesomeIcon  icon={faChartBar}/>,
         link: "/dashboard",
 
     },

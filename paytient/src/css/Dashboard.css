@@ -1,5 +1,7 @@
 .Dashboard{
     text-align: center;
+    margin:0;
+    padding: 0;
 }
 
 .Dashboard #header_dashboard{
@@ -32,7 +34,6 @@
 .Dashboard #container{
     margin-top: 10px;
     margin-left: 0px;
-    margin-right: 0px;
     padding: 0;
 }
 
@@ -54,9 +55,8 @@
   background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 20px 25px 40px 0 rgba(35, 38, 90, 0.06);
-  width: 250px;
+  width: 240px;
   height: 197px;
-  margin:0;
 }
 
 .Card #header_card{
@@ -103,7 +103,7 @@
     width: 27px;
     text-align: left;
     margin-top: 55px;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .Card #faturamento_price{
@@ -173,8 +173,8 @@
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 20px 25px 40px 0 rgba(35, 38, 90, 0.06);
-    width: 1090px;
-    height: 404px;
+    width: 1070px;
+    height: 300px;
     margin-top: 30px;
 }
 
@@ -202,9 +202,17 @@
     margin-left: 10px;
 }
 
-@media screen and (max-width: 480px){
+.Graph #graph_picture{
+    height: 250px;
+}
+
+@media screen and (max-width: 400px){
     .Graph{
-       height: 500px;
+       height: 200px;
        width: 300px;
+    }
+    .Graph #graph_picture{
+        width:200px;
+        height: 100px;
     }
 }

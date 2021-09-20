@@ -6,6 +6,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+//Imagem do gráfico
+import graph from '../assets/graph.png';
 
 //Icones do FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -81,7 +83,7 @@ export default function Dashboard(){
                         <FontAwesomeIcon  icon={faDollarSign} id="sales_icon"/>
                         <div id="graph_title"> Faturamento vs Custo Fixo</div>
                     </div>
-                    
+                    <img src={graph} alt="graph_picture" id="graph_picture"/>
                 </div>
             </Container>
             

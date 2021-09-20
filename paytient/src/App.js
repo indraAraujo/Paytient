@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {Link, Route, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 //Componentes do Bootstrap
 import Container from 'react-bootstrap/Container';
@@ -15,18 +15,19 @@ import Header from './common/Header';
 import Menu from './common/menu_sidebar/Menu';
 
 export default function App() {
-  const[menu, setMenu] = React.useState(false);
+  const[menu, setMenu] = useState(false);
+  const[page, setPage] = useState(0);
   return (
     <div className="App">
-      <Header menu={menu} setMenu={setMenu}/>
+      <Header menu={menu} setMenu={setMenu} />
       <Container id="container">
         <Row id="row">
           <Col md="auto" id="col_menu">
-            <Menu menu={menu}/>
+            <Menu menu={menu} page={page} />
           </Col>
           <Col xs={10} md={9} id="col_pages">
             <Switch>
-              <Route exact path="/"  component={Dashboard}/>
+              <Route exact path="/"  component={Dashboard} />
             </Switch>
           </Col>
         </Row>
