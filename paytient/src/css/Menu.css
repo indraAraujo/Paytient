@@ -40,6 +40,8 @@
     flex: 70%;
     color: #5A5773;
     font-weight: lighter;
+    margin-top: 10px;
+
     
 }
 
@@ -62,4 +64,5 @@
 .row #title_active{
     flex: 70%;
     font-weight:bold;
+    margin-top: 10px;
 }
